@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/sloped_ll_frame"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/my100dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="@dimen/my210dp"
+            android:layout_height="@dimen/my70dp"
+            android:background="@mipmap/running_sloped"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my10dp"
+                android:text="@string/sloped"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+
+            <TextView
+                android:id="@+id/running_tv_sloped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/my10dp"
+                android:src="@mipmap/running_slope_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/my100dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="@dimen/my210dp"
+            android:layout_height="@dimen/my70dp"
+            android:background="@mipmap/running_heat"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/running_tv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my10dp"
+                android:text="@string/heat"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+
+            <TextView
+                android:id="@+id/running_tv_heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/my10dp"
+                android:text="000.0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/my10dp"
+                android:src="@mipmap/running_heat_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/my100dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="@dimen/my210dp"
+            android:layout_height="@dimen/my70dp"
+            android:background="@mipmap/running_mileage">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my10dp"
+                android:text="@string/mileage"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+
+            <TextView
+                android:id="@+id/running_tv_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my95dp"
+                android:text="00.00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/my10dp"
+                android:src="@mipmap/running_mileage_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/my100dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="@dimen/my210dp"
+            android:layout_height="@dimen/my70dp"
+            android:background="@mipmap/running_heart"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my10dp"
+                android:text="@string/heart_rate"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+
+            <TextView
+                android:id="@+id/running_tv_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="000"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/my10dp"
+                android:src="@mipmap/running_heart_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/complete_btn_commit"
+        android:layout_width="@dimen/my400dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/my20dp"
+        android:background="@drawable/selector_login_click"
+        android:text="@string/commit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <View
+        android:id="@+id/info_view_line"
+        android:layout_width="@dimen/my1dp"
+        android:layout_height="@dimen/my400dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/heart_text" />
+
+    <include layout="@layout/part_complete_info_nickname"/>
+    <include layout="@layout/draw_complete_info"/>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/scene_ll_second"
+        android:layout_width="@dimen/my250dp"
+        android:layout_height="@dimen/my350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/my320dp"
+            android:layout_height="@dimen/my300dp"
+            android:background="@drawable/test3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my20dp"
+            android:text="@string/scene_two"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scene_ll_first"
+        android:layout_width="@dimen/my250dp"
+        android:layout_height="@dimen/my350dp"
+        android:layout_alignTop="@id/scene_ll_second"
+        android:layout_marginRight="@dimen/my30dp"
+        android:layout_toLeftOf="@id/scene_ll_second"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/my320dp"
+            android:layout_height="@dimen/my300dp"
+            android:background="@drawable/test2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my20dp"
+            android:text="@string/scene_one"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scene_ll_third"
+        android:layout_width="@dimen/my250dp"
+        android:layout_height="@dimen/my350dp"
+        android:layout_alignTop="@id/scene_ll_second"
+        android:layout_marginLeft="@dimen/my30dp"
+        android:layout_toRightOf="@id/scene_ll_second"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/my320dp"
+            android:layout_height="@dimen/my300dp"
+            android:background="@drawable/test4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my20dp"
+            android:text="@string/scene_three"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my24dp" />
+    </LinearLayout>
+</RelativeLayout>

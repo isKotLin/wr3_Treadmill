@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/suspension_iv_plus"
+        android:layout_width="@dimen/my50dp"
+        android:layout_height="@dimen/my50dp"
+        android:src="@mipmap/volume_plus" />
+
+    <ImageView
+        android:id="@+id/suspension_iv_subtract"
+        android:layout_width="@dimen/my50dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:src="@mipmap/volume_subtract" />
+
+    <ImageView
+        android:id="@+id/suspension_iv_home"
+        android:layout_width="@dimen/my50dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:src="@mipmap/home" />
+
+
+    <ImageView
+        android:id="@+id/suspension_iv_multitasking"
+        android:layout_width="@dimen/my50dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_marginBottom="@dimen/my20dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:src="@mipmap/multitasking" />
+
+    <ImageView
+        android:id="@+id/su_back"
+        android:layout_width="@dimen/my66dp"
+        android:layout_height="@dimen/my66dp" />
+</LinearLayout>

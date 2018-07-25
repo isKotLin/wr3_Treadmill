@@ -1,0 +1,67 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="NoTitle">
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- window背景颜色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--&lt;!&ndash; 灰度值 &ndash;&gt;-->
+        <item name="android:backgroundDimAmount">0.1</item>
+        <!--&lt;!&ndash; 屏幕内容区域以外的背景是否可以设置灰度值(与backgroundDimAmount搭配使用) &ndash;&gt;-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--&lt;!&ndash; 是否支持透window明度 &ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+    </style>
+
+    <style name="error_codes">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_margin">@dimen/my5dp</item>
+        <item name="android:layout_marginBottom">@dimen/my5dp</item>
+        <item name="android:layout_marginRight">@dimen/my5dp</item>
+        <item name="android:layout_marginLeft">@dimen/my5dp</item>
+        <item name="android:layout_marginTop">@dimen/my15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/my30dp</item>
+    </style>
+
+    <style name="error_type">
+        <item name="android:layout_width">@dimen/my380dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginBottom">@dimen/my5dp</item>
+        <item name="android:layout_marginRight">@dimen/my5dp</item>
+        <item name="android:layout_marginLeft">@dimen/my5dp</item>
+        <item name="android:layout_marginTop">@dimen/my15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/my30dp</item>
+    </style>
+
+    <style name="error_opear">
+        <item name="android:layout_width">@dimen/my460dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginBottom">@dimen/my5dp</item>
+        <item name="android:layout_marginRight">@dimen/my5dp</item>
+        <item name="android:layout_marginLeft">@dimen/my5dp</item>
+        <item name="android:layout_marginTop">@dimen/my15dp</item>
+        <item name="android:textSize">@dimen/my30dp</item>
+    </style>
+</resources>

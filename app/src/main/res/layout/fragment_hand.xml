@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/history_ll_frame"
+        android:layout_width="@dimen/my850dp"
+        android:layout_height="@dimen/my70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my80dp"
+        android:background="@color/heart_text"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/my20dp"
+        android:paddingRight="@dimen/my40dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/my0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_date"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/his_date_dan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/my0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_time"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/his_time_dan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="@dimen/my0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/history_pack"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my24dp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/my0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_mileage"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/his_mil_dan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/my0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_heat"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/his_heat_dan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/my0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_heart"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/his_hrc_dan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sport_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/history_ll_frame"
+        android:layout_marginTop="@dimen/my40dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my24dp" />
+
+    <View
+        android:layout_width="@dimen/my1dp"
+        android:layout_height="@dimen/my325dp"
+        android:layout_alignLeft="@id/history_ll_frame"
+        android:layout_below="@id/history_ll_frame"
+        android:background="@color/heart_text" />
+
+    <View
+        android:layout_width="@dimen/my1dp"
+        android:layout_height="@dimen/my325dp"
+        android:layout_alignRight="@id/history_ll_frame"
+        android:layout_below="@id/history_ll_frame"
+        android:background="@color/heart_text" />
+
+    <View
+        android:layout_width="@dimen/my1dp"
+        android:layout_height="@dimen/my325dp"
+        android:layout_alignRight="@id/history_ll_frame"
+        android:layout_below="@id/history_ll_frame"
+        android:layout_marginRight="@dimen/my15dp"
+        android:background="@color/heart_text" />
+
+    <View
+        android:layout_width="@dimen/my850dp"
+        android:layout_height="@dimen/my1dp"
+        android:layout_below="@id/history_ll_frame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my325dp"
+        android:background="@color/heart_text" />
+
+    <ListView
+        android:id="@+id/history_lv_list"
+        android:layout_width="@dimen/my850dp"
+        android:layout_height="@dimen/my325dp"
+        android:layout_below="@id/history_ll_frame"
+        android:layout_centerHorizontal="true"
+        android:divider="@drawable/list_item_divider"
+        android:dividerHeight="@dimen/my1dp"
+        android:fadeScrollbars="false"
+        android:paddingLeft="@dimen/my20dp"
+        android:paddingRight="@dimen/my20dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/shape_history" />
+
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/empty"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:fillViewport="true">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/emptyText"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:lineSpacingMultiplier="0.92"-->
+    <!--android:paddingLeft="10dip"-->
+    <!--android:paddingRight="10dip"-->
+    <!--android:paddingTop="10dip"-->
+    <!--android:text="@string/system_info"-->
+    <!--android:textColor="?android:attr/textColorSecondary"-->
+    <!--android:textSize="20sp" />-->
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</RelativeLayout>

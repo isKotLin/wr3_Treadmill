@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="vertical_start">#4690A3FD</color>
+    <color name="vertical_end">#46E3CEFD</color>
+    <color name="vertical_overed">#0011CE33</color>
+    <color name="vertical_over">#aaffffff</color>
+    <color name="sport_time">#67e04a</color>
+    <color name="heat">#ff9e3f</color>
+    <color name="avg_heart">#f1400a</color>
+    <color name="avg_speed">#f15dec</color>
+    <color name="pace">#0aadf1</color>
+    <color name="bj">#96191919</color>
+    <color name="line">#40ffffff</color>
+    <color name="heart_text">#b10a1f</color>
+    <color name="program_bj">#80000000</color>
+    <color name="startup_bj">#000017</color>
+
+    <color name="start">#ccb504</color>
+</resources>

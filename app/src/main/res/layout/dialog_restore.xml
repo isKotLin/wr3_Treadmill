@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/my400dp"
+    android:layout_height="@dimen/my250dp"
+    android:layout_gravity="center"
+    android:background="@mipmap/dialog_bj">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my30dp"
+        android:drawablePadding="@dimen/my20dp"
+        android:drawableTop="@mipmap/restore_icon"
+        android:gravity="center"
+        android:text="@string/restore"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my24dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_sign"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/restore_tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my24dp" />
+
+        <TextView
+            android:id="@+id/restore_tv_affirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/heart_text"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my24dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/ll_sign"
+        android:background="@color/heart_text" />
+</RelativeLayout>

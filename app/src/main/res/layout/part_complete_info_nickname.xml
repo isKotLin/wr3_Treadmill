@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/my30dp"
+    android:layout_marginTop="@dimen/my40dp">
+
+    <TextView
+        android:id="@+id/info_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my10dp"
+        android:text="@string/nickname"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <EditText
+        android:id="@+id/info_et_name"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my40dp"
+        android:layout_toRightOf="@id/info_tv_name"
+        android:background="@mipmap/frame"
+        android:padding="@dimen/my10dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my26dp" />
+
+    <TextView
+        android:id="@+id/info_tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_tv_name"
+        android:layout_marginTop="@dimen/my30dp"
+        android:text="@string/sex"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <RadioGroup
+        android:id="@+id/info_rg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_tv_name"
+        android:layout_marginLeft="@dimen/my80dp"
+        android:layout_marginTop="@dimen/my20dp"
+        android:layout_toRightOf="@id/info_tv_sex"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/info_rt_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/selector_complete_info"
+            android:drawablePadding="@dimen/my20dp"
+            android:text="@string/male"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+
+        <RadioButton
+            android:id="@+id/info_rt_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my40dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_complete_info"
+            android:drawablePadding="@dimen/my20dp"
+            android:text="@string/female"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+    </RadioGroup>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/info_iv_male"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/my80dp"-->
+    <!--android:layout_toRightOf="@id/info_tv_sex"-->
+    <!--android:background="@mipmap/square" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/info_tv_male"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/my20dp"-->
+    <!--android:layout_marginTop="@dimen/my10dp"-->
+    <!--android:layout_toRightOf="@id/info_iv_male"-->
+    <!--android:text="@string/male"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/my30dp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/info_iv_female"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/my40dp"-->
+    <!--android:layout_toRightOf="@id/info_tv_male"-->
+    <!--android:background="@mipmap/square" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/my20dp"-->
+    <!--android:layout_marginTop="@dimen/my10dp"-->
+    <!--android:layout_toRightOf="@id/info_iv_female"-->
+    <!--android:text="@string/female"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/my30dp" />-->
+
+    <TextView
+        android:id="@+id/info_tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_rg_sex"
+        android:layout_marginTop="@dimen/my30dp"
+        android:text="@string/stature"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <EditText
+        android:id="@+id/info_et_height"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_rg_sex"
+        android:layout_marginLeft="@dimen/my40dp"
+        android:layout_marginTop="@dimen/my25dp"
+        android:layout_toRightOf="@id/info_tv_height"
+        android:background="@mipmap/frame"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/info_et_height"
+        android:layout_alignRight="@id/info_et_height"
+        android:layout_marginBottom="@dimen/my10dp"
+        android:layout_marginRight="@dimen/my10dp"
+        android:text="@string/cm"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:id="@+id/info_tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_et_height"
+        android:layout_marginTop="@dimen/my30dp"
+        android:text="@string/weight"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <EditText
+        android:id="@+id/info_et_weight"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_et_height"
+        android:layout_marginLeft="@dimen/my40dp"
+        android:layout_marginTop="@dimen/my25dp"
+        android:layout_toRightOf="@id/info_tv_weight"
+        android:background="@mipmap/frame"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/info_et_weight"
+        android:layout_alignRight="@id/info_et_weight"
+        android:layout_marginBottom="@dimen/my10dp"
+        android:layout_marginRight="@dimen/my10dp"
+        android:text="@string/kg"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+
+</RelativeLayout>

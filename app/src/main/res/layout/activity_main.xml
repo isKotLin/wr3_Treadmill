@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bj"
+    tools:context="com.vigorchip.treadmill.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my55dp"
+        android:background="#10ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/activity_main_back"
+            android:layout_width="@dimen/my55dp"
+            android:layout_height="@dimen/my55dp"
+            android:paddingBottom="@dimen/my8dp"
+            android:paddingTop="@dimen/my8dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/activity_main_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+
+        <LinearLayout
+            android:id="@+id/personal_ll_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/personal_tv_info_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/my20dp"
+                android:text="@string/person_info"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+
+            <TextView
+                android:id="@+id/sport_tv_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/my20dp"
+                android:text="@string/sport_history"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_ll_cancellation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/my5dp">
+
+            <ImageView
+                android:layout_width="@dimen/my40dp"
+                android:layout_height="@dimen/my40dp"
+                android:layout_marginLeft="@dimen/my10dp"
+                android:src="@mipmap/logout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my25dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.vigorchip.treadmill.view.HomeViewPager
+        android:id="@+id/activity_vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_main_title"
+        android:overScrollMode="never" />
+
+    <FrameLayout
+        android:id="@+id/activity_fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_main_title" />
+
+    <TextView
+        android:id="@+id/activity_tv_time_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/my30dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my20dp" />
+
+    <ImageView
+        android:id="@+id/activity_iv_wifi_icon"
+        android:layout_width="@dimen/my25dp"
+        android:layout_height="@dimen/my25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/my140dp"
+        android:layout_marginTop="@dimen/my15dp" />
+
+
+    <LinearLayout
+        android:id="@+id/activity_tv_app_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/my20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/my50dp"
+            android:layout_height="@dimen/my50dp"
+            android:src="@drawable/selector_home_app" />
+
+        <TextView
+            android:id="@+id/home_tv_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my5dp"
+            android:text="@string/app"
+            android:textSize="@dimen/my20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_tv_home_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/my20dp"
+        android:layout_marginRight="@dimen/my150dp"
+        android:layout_toLeftOf="@id/activity_tv_app_main"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/my50dp"
+            android:layout_height="@dimen/my50dp"
+            android:src="@drawable/selector_home_sport" />
+
+        <TextView
+            android:id="@+id/home_tv_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my5dp"
+            android:text="@string/home_pager"
+            android:textSize="@dimen/my20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_tv_setting_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/my20dp"
+        android:layout_marginLeft="@dimen/my150dp"
+        android:layout_toRightOf="@id/activity_tv_app_main"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/my50dp"
+            android:layout_height="@dimen/my50dp"
+            android:src="@drawable/selector_home_settings" />
+
+        <TextView
+            android:id="@+id/home_tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my5dp"
+            android:text="@string/setting"
+            android:textSize="@dimen/my20dp" />
+    </LinearLayout>
+</RelativeLayout>

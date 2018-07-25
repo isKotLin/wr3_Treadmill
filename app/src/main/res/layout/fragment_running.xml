@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/running_background">
+
+    <RelativeLayout
+        android:layout_width="@dimen/my522dp"
+        android:layout_height="@dimen/my522dp"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/running_rotary">
+
+        <com.vigorchip.treadmill.view.RunningView
+            android:id="@+id/running_rv_time"
+            android:layout_width="@dimen/my260dp"
+            android:layout_height="@dimen/my260dp"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/running_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/running_tv_time"
+                android:layout_toRightOf="@id/running_tv_time"
+                android:text="s"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my26dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/running_tv_time"
+                android:layout_centerHorizontal="true"
+                android:text="@string/time"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/my522dp"
+        android:layout_height="@dimen/my522dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/running_rotary">
+
+        <com.vigorchip.treadmill.view.RunningView
+            android:id="@+id/running_rv_speed"
+            android:layout_width="@dimen/my260dp"
+            android:layout_height="@dimen/my260dp"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/running_tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/running_tv_speed"
+                android:layout_toRightOf="@id/running_tv_speed"
+                android:text="km/h"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my26dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/running_tv_speed"
+                android:layout_centerHorizontal="true"
+                android:text="@string/speed"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/my10dp"
+        android:src="@mipmap/running_button" />
+
+    <LinearLayout
+        android:id="@+id/running_ll_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/my30dp"
+        android:layout_marginLeft="@dimen/my90dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/running_iv_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my10dp"
+            android:src="@mipmap/running_pause" />
+
+        <TextView
+            android:id="@+id/running_tv_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/running_tv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/my30dp"
+        android:layout_marginRight="@dimen/my90dp"
+        android:drawablePadding="@dimen/my10dp"
+        android:drawableTop="@mipmap/running_stop"
+        android:gravity="center"
+        android:text="@string/stop"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <include layout="@layout/other_running" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/my36dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/running_iv_sloped_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/my10dp"
+            android:src="@mipmap/running_sloped_plus" />
+
+        <LinearLayout
+            android:id="@+id/sloped_ll_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/my20dp"
+            android:background="@mipmap/running_button_frame"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/running_slope" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/running_iv_sloped_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my80dp"
+            android:padding="@dimen/my10dp"
+            android:src="@mipmap/running_sloped_reduce" />
+
+        <ImageView
+            android:id="@+id/running_iv_speed_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/my10dp"
+            android:src="@mipmap/running_speed_plus" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/my20dp"
+            android:background="@mipmap/running_button_frame"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/running_speed" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/running_iv_speed_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/my10dp"
+            android:src="@mipmap/running_speed_reduce" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/running_tv_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my20dp"
+            android:drawablePadding="@dimen/my10dp"
+            android:drawableTop="@mipmap/running_media"
+            android:gravity="center"
+            android:text="@string/app"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my18dp" />
+
+        <TextView
+            android:id="@+id/running_tv_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/my10dp"
+            android:drawableTop="@mipmap/running_scene"
+            android:gravity="center"
+            android:text="@string/scene"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my18dp" />
+    </LinearLayout>
+</RelativeLayout>

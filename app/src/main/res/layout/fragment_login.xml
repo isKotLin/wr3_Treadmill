@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/login_iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/my30dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:src="@mipmap/user_icon" />
+
+    <EditText
+        android:id="@+id/login_et_name"
+        android:layout_width="@dimen/my400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my20dp"
+        android:layout_toRightOf="@id/login_iv_icon"
+        android:background="@mipmap/frame"
+        android:hint="@string/user_name"
+        android:maxLength="11"
+        android:singleLine="true"
+        android:padding="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <ImageView
+        android:id="@+id/login_iv_padlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_et_name"
+        android:layout_marginRight="@dimen/my30dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:src="@mipmap/padlock" />
+
+    <EditText
+        android:id="@+id/login_et_password"
+        android:layout_width="@dimen/my400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_et_name"
+        android:layout_toRightOf="@id/login_iv_icon"
+        android:background="@mipmap/frame"
+        android:hint="@string/user_password"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:padding="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <ImageView
+        android:id="@+id/login_iv_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_et_password"
+        android:layout_below="@id/login_et_password"
+        android:layout_marginTop="@dimen/my20dp"
+        android:src="@drawable/selector_complete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_et_password"
+        android:layout_toRightOf="@id/login_iv_remember"
+        android:layout_marginLeft="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my20dp"
+        android:text="@string/remember"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my25dp" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="@dimen/my400dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_below="@id/login_iv_remember"
+        android:layout_marginTop="@dimen/my20dp"
+        android:layout_toRightOf="@id/login_iv_icon"
+        android:background="@drawable/selector_login_click"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:id="@+id/re_tv_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/login_btn"
+        android:layout_below="@id/login_btn"
+        android:layout_marginTop="@dimen/my20dp"
+        android:text="@string/re_registration"
+        android:textColor="#b10a1f"
+        android:textSize="@dimen/my18dp" />
+
+    <TextView
+        android:id="@+id/forget_tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/re_tv_registration"
+        android:layout_toLeftOf="@id/re_tv_registration"
+        android:text="@string/forget_password"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/my18dp" />
+</RelativeLayout>

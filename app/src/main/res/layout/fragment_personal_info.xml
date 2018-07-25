@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/personal_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my15dp"
+        android:src="@mipmap/male"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/personal_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/personal_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/personal_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/user_ll_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/personal_tv_info"
+        android:layout_alignBottom="@id/personal_tv_info"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/my40dp"
+            android:layout_height="@dimen/my40dp"
+            android:layout_marginLeft="@dimen/my7dp"
+            android:src="@mipmap/edit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my25dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/my1dp"
+        android:layout_height="@dimen/my310dp"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my20dp"
+        android:background="@color/heart_text" />
+
+    <View
+        android:layout_width="@dimen/my700dp"
+        android:layout_height="@dimen/my1dp"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my80dp"
+        android:background="@color/heart_text" />
+
+    <View
+        android:layout_width="@dimen/my700dp"
+        android:layout_height="@dimen/my1dp"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my140dp"
+        android:background="@color/heart_text" />
+
+    <View
+        android:layout_width="@dimen/my700dp"
+        android:layout_height="@dimen/my1dp"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my200dp"
+        android:background="@color/heart_text" />
+
+    <View
+        android:layout_width="@dimen/my700dp"
+        android:layout_height="@dimen/my1dp"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my260dp"
+        android:background="@color/heart_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginRight="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my30dp"
+        android:layout_toLeftOf="@id/personal_icon"
+        android:text="@string/sport_number"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginRight="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my90dp"
+        android:layout_toLeftOf="@id/personal_icon"
+        android:text="@string/stature"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginRight="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my150dp"
+        android:layout_toLeftOf="@id/personal_icon"
+        android:text="@string/weight"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginRight="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my210dp"
+        android:layout_toLeftOf="@id/personal_icon"
+        android:text="@string/heart_rate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginRight="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my270dp"
+        android:layout_toLeftOf="@id/personal_icon"
+        android:text="@string/chronic_illness"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:id="@+id/personal_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginLeft="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my30dp"
+        android:layout_toRightOf="@id/personal_icon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:id="@+id/personal_tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginLeft="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my90dp"
+        android:layout_toRightOf="@id/personal_icon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:id="@+id/personal_tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginLeft="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my150dp"
+        android:layout_toRightOf="@id/personal_icon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:id="@+id/personal_tv_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginLeft="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my210dp"
+        android:layout_toRightOf="@id/personal_icon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:id="@+id/personal_tv_ill"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_tv_info"
+        android:layout_marginLeft="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my270dp"
+        android:layout_toRightOf="@id/personal_icon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+</RelativeLayout>

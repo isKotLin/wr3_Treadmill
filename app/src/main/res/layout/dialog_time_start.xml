@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/my570dp"
+    android:layout_height="@dimen/my330dp"
+    android:layout_gravity="center"
+    android:background="@mipmap/start_bj"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/my340dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/my10dp">
+
+        <TextView
+            android:id="@+id/start_tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my30dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my34dp" />
+
+        <TextView
+            android:id="@+id/start_tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my10dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my14dp"
+            android:visibility="gone" />
+
+        <com.vigorchip.treadmill.view.TwoLineCharView
+            android:id="@+id/start_tcv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/my160dp"
+            android:layout_marginTop="@dimen/my30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/my20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speed_show"
+                android:layout_marginRight="@dimen/my30dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my14dp" />
+
+            <TextView
+                android:id="@+id/tv_slope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sloped_show"
+                android:textColor="#f00f"
+                android:textSize="@dimen/my14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/my1dp"
+        android:layout_height="match_parent"
+        android:background="@mipmap/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/start_time_frame"
+            android:layout_width="@dimen/my100dp"
+            android:layout_height="@dimen/my130dp"
+            android:layout_marginLeft="@dimen/my40dp"
+            android:layout_marginTop="@dimen/my30dp"
+            android:background="@mipmap/time_bj">
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/my20dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my56dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/start_time"
+                android:layout_marginRight="@dimen/my20dp"
+                android:layout_marginTop="@dimen/my10dp"
+                android:text="@string/min"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/start_time_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/start_time_frame"
+            android:layout_marginLeft="@dimen/my20dp"
+            android:layout_toRightOf="@id/start_time_frame"
+            android:src="@mipmap/start_time_plus" />
+
+        <ImageView
+            android:id="@+id/start_time_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/start_time_frame"
+            android:layout_marginLeft="@dimen/my20dp"
+            android:layout_toRightOf="@id/start_time_frame"
+            android:src="@mipmap/start_time_subtract" />
+
+        <TextView
+            android:id="@+id/start_running"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my120dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/time_bj"
+            android:drawablePadding="@dimen/my10dp"
+            android:drawableTop="@mipmap/start"
+            android:gravity="center"
+            android:padding="@dimen/my10dp"
+            android:paddingBottom="@dimen/my10dp"
+            android:text="@string/start"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my24dp" />
+    </RelativeLayout>
+</LinearLayout>

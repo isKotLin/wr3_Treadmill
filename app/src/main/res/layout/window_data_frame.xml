@@ -1,0 +1,271 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/suspension_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my110dp"
+        android:background="#cc000017"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/suspension_ll_pause"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my110dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/text0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/suspension_iv_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:src="@mipmap/suspension_pause" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my110dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/my30dp"
+                    android:layout_height="@dimen/my30dp"
+                    android:src="@mipmap/suspension_speed" />
+
+                <TextView
+                    android:id="@+id/speed_tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:text="@string/speed"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/my24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/suspension_tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.0 "
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/data_ll_slopes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my110dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/my30dp"
+                    android:layout_height="@dimen/my30dp"
+                    android:src="@mipmap/suspension_sloped" />
+
+                <TextView
+                    android:id="@+id/slope_tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:text="@string/sloped"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/my24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/suspension_tv_sloped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my110dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/my30dp"
+                    android:layout_height="@dimen/my30dp"
+                    android:src="@mipmap/suspension_time" />
+
+                <TextView
+                    android:id="@+id/time_tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:text="@string/time"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/my24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/suspension_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="00:00:00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my110dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/my30dp"
+                    android:layout_height="@dimen/my30dp"
+                    android:src="@mipmap/suspension_mileage" />
+
+                <TextView
+                    android:id="@+id/distance_tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:text="@string/mileage"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/my24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/suspension_tv_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my110dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/my30dp"
+                    android:layout_height="@dimen/my30dp"
+                    android:src="@mipmap/suspension_heat" />
+
+                <TextView
+                    android:id="@+id/heat_tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:text="@string/heat"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/my24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/suspension_tv_heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000.0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my110dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/my30dp"
+                    android:layout_height="@dimen/my30dp"
+                    android:src="@mipmap/suspension_heart" />
+
+                <TextView
+                    android:id="@+id/hrc_tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:text="@string/heart_rate"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/my24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/suspension_tv_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/suspension_ll_stop"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my110dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/adapter7"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:src="@mipmap/suspension_stop" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

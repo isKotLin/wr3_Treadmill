@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/register_iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/my30dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:src="@mipmap/user_icon" />
+
+    <EditText
+        android:id="@+id/register_et_name"
+        android:layout_width="@dimen/my400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my20dp"
+        android:layout_toRightOf="@id/register_iv_icon"
+        android:background="@mipmap/frame"
+        android:hint="@string/user_name"
+        android:imeOptions="actionNext"
+        android:maxLength="11"
+        android:nextFocusForward="@+id/et_express_receiver_address"
+        android:padding="@dimen/my10dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <ImageView
+        android:id="@+id/register_iv_padlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_et_name"
+        android:layout_marginRight="@dimen/my30dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:src="@mipmap/padlock" />
+
+    <EditText
+        android:id="@+id/register_et_password"
+        android:layout_width="@dimen/my400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_et_name"
+        android:layout_marginBottom="@dimen/my20dp"
+        android:layout_toRightOf="@id/register_iv_icon"
+        android:background="@mipmap/frame"
+        android:hint="@string/user_password"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:padding="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <ImageView
+        android:id="@+id/re_register_iv_padlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_et_password"
+        android:layout_marginRight="@dimen/my30dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:src="@mipmap/padlock" />
+
+    <EditText
+        android:id="@+id/re_register_et_password"
+        android:layout_width="@dimen/my400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_et_password"
+        android:layout_toRightOf="@id/register_iv_icon"
+        android:background="@mipmap/frame"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:padding="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="@dimen/my400dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_below="@id/re_register_et_password"
+        android:layout_marginTop="@dimen/my20dp"
+        android:layout_toRightOf="@id/register_iv_icon"
+        android:background="@drawable/selector_login_click"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/re_tv_registration"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignRight="@id/register_btn"-->
+    <!--android:layout_below="@id/register_btn"-->
+    <!--android:layout_marginTop="@dimen/my20dp"-->
+    <!--android:text="@string/re_registration"-->
+    <!--android:textColor="#b10a1f"-->
+    <!--android:textSize="@dimen/my18dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/forget_tv_password"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@id/re_tv_registration"-->
+    <!--android:layout_toLeftOf="@id/re_tv_registration"-->
+    <!--android:text="@string/forget_password"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/my18dp" />-->
+</RelativeLayout>

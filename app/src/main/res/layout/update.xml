@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/my800dp"
+    android:layout_height="@dimen/my300dp">
+
+    <TextView
+        android:id="@+id/update_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my20dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="@dimen/my40dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my1dp"
+        android:layout_below="@id/update_tv"
+        android:layout_marginBottom="@dimen/my30dp"
+        android:layout_marginTop="@dimen/my30dp"
+        android:background="@android:color/holo_blue_light" />
+
+    <Button
+        android:id="@+id/replaced"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="@dimen/my100dp"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="@dimen/my50dp"
+        android:background="@drawable/shape_refuel_btn"
+        android:text="@string/affaim_updata"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my35dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="@dimen/my100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view"
+        android:layout_marginRight="@dimen/my50dp"
+        android:background="@drawable/shape_refuel_btn"
+        android:text="@string/next_update"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my35dp" />
+    <ProgressBar
+        android:id="@+id/update_pb"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="@dimen/my700dp"
+        android:layout_height="@dimen/my15dp"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="@dimen/my90dp"
+        android:layout_below="@id/update_pb"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_refuel_btn"
+        android:text="@string/next_update"
+        android:layout_marginTop="@dimen/my30dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my35dp"
+        android:visibility="gone" />
+</RelativeLayout>

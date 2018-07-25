@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/my50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/system_info"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/my50dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my10dp"
+                android:text="@string/system_configuration"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+
+            <TextView
+                android:id="@+id/setting_tv_ddr"
+                android:layout_below="@id/wr"
+                android:textSize="@dimen/my30dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/emmc_flash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_tv_ddr"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my20dp"
+            android:text="@string/instructions"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/my50dp" />
+
+        <TextView
+            android:id="@+id/setting_tv_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my10dp"
+            android:text="@string/conten_note"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+
+        <TextView
+            android:id="@+id/setting_tv_opera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my20dp"
+            android:text="@string/conten_guide"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+
+        <!--<include layout="@layout/error_item" />-->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="3"
+                android:layout_marginTop="@dimen/my20dp"
+                android:text="@string/label_error_title"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/my50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="@dimen/my5dp"
+                android:layout_marginRight="@dimen/my5dp"
+                android:layout_marginTop="@dimen/my5dp"
+                android:text="@string/error_code"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/my5dp"
+                android:gravity="center"
+                android:text="@string/error_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/my5dp"
+                android:gravity="center"
+                android:text="@string/error_handle"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+
+            <TextView
+                android:id="@+id/codes_tv_0"
+                style="@style/error_codes"
+                android:text="@string/error_msg0" />
+
+            <TextView
+                android:id="@+id/type_tv_0"
+                style="@style/error_type"
+                android:text="@string/error_names0" />
+
+            <TextView
+                android:id="@+id/opear_tv_0"
+                style="@style/error_opear"
+                android:text="@string/error_msgs0" />
+
+            <TextView
+                android:id="@+id/codes_tv_1"
+                style="@style/error_codes"
+                android:text="@string/error_msg1" />
+
+            <TextView
+                android:id="@+id/type_tv_1"
+                style="@style/error_type"
+                android:text="@string/error_names1" />
+
+            <TextView
+                android:id="@+id/opear_tv_1"
+                style="@style/error_opear"
+                android:text="@string/error_msgs1" />
+
+            <TextView
+                android:id="@+id/codes_tv_2"
+                style="@style/error_codes"
+                android:text="@string/error_msg2" />
+
+            <TextView
+                android:id="@+id/type_tv_2"
+                style="@style/error_type"
+                android:text="@string/error_names2" />
+
+            <TextView
+                android:id="@+id/opear_tv_2"
+                style="@style/error_opear"
+                android:text="@string/error_msgs2" />
+
+            <TextView
+                android:id="@+id/codes_tv_3"
+                style="@style/error_codes"
+                android:text="@string/error_msg3" />
+
+            <TextView
+                android:id="@+id/type_tv_3"
+                style="@style/error_type"
+                android:text="@string/error_names3" />
+
+            <TextView
+                android:id="@+id/opear_tv_3"
+                style="@style/error_opear"
+                android:text="@string/error_msgs3" />
+
+            <TextView
+                android:id="@+id/codes_tv_4"
+                style="@style/error_codes"
+                android:text="@string/error_msg4" />
+
+            <TextView
+                android:id="@+id/type_tv_4"
+                style="@style/error_type"
+                android:text="@string/error_names4" />
+
+            <TextView
+                android:id="@+id/opear_tv_4"
+                style="@style/error_opear"
+                android:text="@string/error_msgs4" />
+
+            <TextView
+                android:id="@+id/codes_tv_5"
+                style="@style/error_codes"
+                android:text="@string/error_msg5" />
+
+            <TextView
+                android:id="@+id/type_tv_5"
+                style="@style/error_type"
+                android:text="@string/error_names5" />
+
+            <TextView
+                android:id="@+id/opear_tv_5"
+                style="@style/error_opear"
+                android:text="@string/error_msgs5" />
+
+            <TextView
+                android:id="@+id/codes_tv_6"
+                style="@style/error_codes"
+                android:text="@string/error_msg6" />
+
+            <TextView
+                android:id="@+id/type_tv_6"
+                style="@style/error_type"
+                android:text="@string/error_names6" />
+
+            <TextView
+                android:id="@+id/opear_tv_6"
+                style="@style/error_opear"
+                android:text="@string/error_msgs6" />
+
+            <TextView
+                android:id="@+id/codes_tv_7"
+                style="@style/error_codes"
+                android:text="@string/error_msg7" />
+
+            <TextView
+                android:id="@+id/type_tv_7"
+                style="@style/error_type"
+                android:text="@string/error_names7" />
+
+            <TextView
+                android:id="@+id/opear_tv_7"
+                style="@style/error_opear"
+                android:text="@string/error_msgs7" />
+
+            <TextView
+                android:id="@+id/codes_tv_8"
+                style="@style/error_codes"
+                android:text="@string/error_msg8" />
+
+            <TextView
+                android:id="@+id/type_tv_8"
+                style="@style/error_type"
+                android:text="@string/error_names8" />
+
+            <TextView
+                android:id="@+id/opear_tv_8"
+                style="@style/error_opear"
+                android:text="@string/error_msgs8" />
+
+            <TextView
+                android:id="@+id/codes_tv_9"
+                style="@style/error_codes"
+                android:text="@string/error_msg9" />
+
+            <TextView
+                android:id="@+id/type_tv_9"
+                style="@style/error_type"
+                android:text="@string/error_names9" />
+
+            <TextView
+                android:id="@+id/opear_tv_9"
+                style="@style/error_opear"
+                android:text="@string/error_msgs9" />
+
+            <TextView
+                android:id="@+id/codes_tv_10"
+                style="@style/error_codes"
+                android:text="@string/error_msg10" />
+
+            <TextView
+                android:id="@+id/type_tv_10"
+                style="@style/error_type"
+                android:text="@string/error_names10" />
+
+            <TextView
+                android:id="@+id/opear_tv_10"
+                style="@style/error_opear"
+                android:text="@string/error_msgs10" />
+
+            <TextView
+                android:id="@+id/codes_tv_11"
+                style="@style/error_codes"
+                android:text="@string/error_msg11" />
+
+            <TextView
+                android:id="@+id/type_tv_11"
+                style="@style/error_type"
+                android:text="@string/error_names11" />
+
+            <TextView
+                android:id="@+id/opear_tv_11"
+
+                style="@style/error_opear"
+                android:text="@string/error_msgs11" />
+
+            <TextView
+                android:id="@+id/codes_tv_12"
+                style="@style/error_codes"
+                android:text="@string/error_msg12" />
+
+            <TextView
+                android:id="@+id/type_tv_12"
+                style="@style/error_type"
+                android:text="@string/error_names12" />
+
+            <TextView
+                android:id="@+id/opear_tv_12"
+
+                style="@style/error_opear"
+                android:text="@string/error_msgs12" />
+
+            <TextView
+                android:id="@+id/codes_tv_13"
+                style="@style/error_codes"
+                android:text="@string/error_msg13" />
+
+            <TextView
+                android:id="@+id/type_tv_13"
+                style="@style/error_type"
+                android:text="@string/error_names13" />
+
+            <TextView
+                android:id="@+id/opear_tv_13"
+
+                style="@style/error_opear"
+                android:text="@string/error_msgs13" />
+
+            <TextView
+                android:id="@+id/codes_tv_14"
+                style="@style/error_codes"
+                android:text="@string/error_msg14" />
+
+            <TextView
+                android:id="@+id/type_tv_14"
+                style="@style/error_type"
+                android:text="@string/error_names14" />
+
+            <TextView
+                android:id="@+id/opear_tv_14"
+                style="@style/error_opear"
+                android:text="@string/error_msgs14" />
+
+            <TextView
+                android:id="@+id/codes_tv_15"
+                style="@style/error_codes"
+                android:text="@string/error_msg15" />
+
+            <TextView
+                android:id="@+id/type_tv_15"
+                style="@style/error_type"
+                android:text="@string/error_names15" />
+
+            <TextView
+                android:id="@+id/opear_tv_15"
+                style="@style/error_opear"
+                android:text="@string/error_msgs15" />
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

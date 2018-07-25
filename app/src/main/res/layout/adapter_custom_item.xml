@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/my160dp"
+    android:layout_height="@dimen/my160dp">
+
+    <RelativeLayout
+        android:id="@+id/custom_rl_bj"
+        android:layout_width="@dimen/my180dp"
+        android:layout_height="@dimen/my160dp"
+        android:layout_marginLeft="@dimen/my24dp">
+
+        <View
+            android:id="@+id/custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my60dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/custom_iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my20dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/custom_tv_add"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/custom_iv_add"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/my10dp"
+            android:textSize="@dimen/my24dp"
+            android:layout_height="wrap_content" />
+
+        <com.vigorchip.treadmill.view.LineCharView
+            android:id="@+id/custom_lcv_show"
+            android:layout_width="@dimen/my150dp"
+            android:layout_height="@dimen/my60dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/custom_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_rl_bj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my24dp" />
+</RelativeLayout>

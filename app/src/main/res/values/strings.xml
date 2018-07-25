@@ -1,0 +1,260 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Treadmill</string>
+    <string name="bright">bright</string>
+    <string name="volume">volume</string>
+    <string name="visitant">Visitor</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="stopping">Stopping</string>
+    <string name="user_name">Account number</string>
+    <string name="user_password">Password</string>
+    <string name="re_registration">re-register</string>
+    <string name="forget_password">Forget the password？</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="commit">Commit</string>
+    <string name="sex">Sex</string>
+    <string name="male">Man</string>
+    <string name="female">Woman</string>
+    <string name="stature">Height</string>
+    <string name="weight">Weight</string>
+    <string name="kg">kg</string>
+    <string name="cm">cm</string>
+    <string name="heart_rate">HRC</string>
+    <string name="bpm">BPM</string>
+    <string name="chronic_illness">Chronic Illness</string>
+    <string name="hyperglycemia">Hyperglycemia</string>
+    <string name="hyperlipidemia">Hyperlipidemia</string>
+    <string name="hypertension">Hypertension</string>
+    <string name="arthritis">Arthritis</string>
+    <string name="cardiopathy">Cardiopathy</string>
+    <string name="without">Without</string>
+    <string name="scene_mode">Scene Mode</string>
+    <string name="program_mode">Program Mode</string>
+    <string name="heart_rate_mode">HRC Mode</string>
+    <string name="inverted_mode">Inverse Mode</string>
+    <string name="custom_mode">Custom Mode</string>
+    <string name="manual_mode">Manual Mode</string>
+    <string name="setting">Setting</string>
+    <string name="home_pager">Home Page</string>
+    <string name="app">App</string>
+    <string name="choose_language">Language</string>
+    <string name="clean">One key clean</string>
+    <string name="restore">One key restore</string>
+    <string name="version_info">Version Info</string>
+    <string name="instructions">Instructions</string>
+    <string name="wifi">WiFi</string>
+    <string name="no_install">No intallment of this app</string>
+    <string name="local_video">Local Videos</string>
+    <string name="local_music">Local Music</string>
+    <string name="aerobies_gradient">Reduced Fat Movement</string>
+    <string name="climb_gradient">Mountain-climbing</string>
+    <string name="preinstall_gradient">Professional Sports</string>
+    <string name="insanity_gradient">Cardio</string>
+    <string name="health_care_gradient">Health Movement</string>
+    <string name="warm_up_gradient">Warm-up</string>
+    <string name="time">Time</string>
+    <string name="mileage">Distance</string>
+    <string name="heat">Calorie</string>
+    <string name="speed">Speed</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="system_info">System Information</string>
+    <string name="system_configuration">System Layout \nCPU : ARM Cortex-A7\nGPU : Mali400MP2</string>
+    <string name="memory_space">Storage Space\nTotal Memory: 8GB\nSystem Take-up Memory:</string>
+    <string name="useable_user">GB\nAvailable Memory:</string>
+    <string name="been_used">GB(Used:</string>
+    <string name="remaining_GB">GB, Remain:</string>
+    <string name="remaining_MB">MB, Remain:</string>
+    <string name="GB">GB)</string>
+    <string-array name="operation_guide">
+        <item>1.This system ensured that treadmill can run stability and fluency.</item>
+        <item>2.The treadmill should be kept in a dry, ventilated place, with water, oil and other liquids contaminated.</item>
+        <item>3.As for touch screen:Avoid near magnets and speakers with magnets, and avoid sharp objects sliding on the surface of the touch screen, avoiding water, oil, and any other liquid or solid that conducts electricity</item>
+        <item>4.If the system is not running smoothly, there may be an irregular apk application installed, and the apk should be managed and cleaned on a regular basis.</item>
+        <item>5.Power on the whole machine and wait for system to start, about 30 seconds.</item>
+        <item>6.When the system enters the main interface, it can enter the smart running interface by touching "smart running"</item>
+        <item>7.There are six modes for user selection: manual mode, inverse mode,scene Mode, program mode, custom mode and HRC mode.
+        After each exercise, the sports record can be shared, which should be pre-installed with the corresponding apk application.</item>
+    </string-array>
+    <string name="label_error_title">Error Code Query</string>
+    <string name="error_code">Code</string>
+    <string name="error_name">Type</string>
+    <string name="error_handle">Error Handle</string>
+    <string name="version_number">Version Number : </string>
+    <string name="music_version_number">Local Music : </string>
+    <string name="video_version_number">Local Videos : </string>
+    <string name="date">Date : </string>
+    <string name="machine_type">Model : </string>
+    <string name="scene">Scene</string>
+    <string name="kilocalorie">KCal</string>
+    <string name="min">Min</string>
+    <string name="per">km/h</string>
+    <!--<string name="seconds">Seconds/km</string>-->
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="sport_result">Sports Results</string>
+    <string name="aaa">You run out this time</string>
+    <string name="sport_time">Time</string>
+    <string name="avg_heart">Avg HRC</string>
+    <string name="avg_speed">Avg Speed</string>
+    <string name="pace">Pace</string>
+    <string name="scan">Scan </string>
+    <string name="share">Share a circle of friends</string>
+    <string name="age">Age</string>
+    <string name="targer_heart">Target HRC</string>
+    <string name="sui">Year</string>
+    <string name="km">Km</string>
+    <string name="sport_number">Number of sports</string>
+    <string name="scene_one">Scene One</string>
+    <string name="scene_two">Scene Two</string>
+    <string name="scene_three">Scene Three</string>
+    <string name="leiji">Cumulative number of times</string>
+    <string name="count_mileage">Today total mileage</string>
+    <string name="count_time">Today total length</string>
+    <string name="sloped">Incline</string>
+    <string-array name="error_names">
+        <item>Communication error(System)</item>
+        <item>Motor not connected</item>
+        <item>Speed-sensor no signal</item>
+        <item>Lifting-Motor is calibrating</item>
+        <item>Over current protection</item>
+        <item>Driver or Motor error</item>
+        <item>Safety-key fall</item>
+        <item>Under voltage protection</item>
+        <item>Over voltage protection</item>
+        <item>Communication error(Controller)</item>
+        <item>Communication error(APP-System)</item>
+        <item>Hall sensor no signal</item>
+        <item>Controller inner communication error</item>
+        <item>Over heated</item>
+        <item>Internal voltage check error</item>
+        <item>Severe over current</item>
+        <item>Communication error</item>
+    </string-array>
+    <string-array name="error_msgs">
+        <item>Please check and confirm the connect of Console and Driver, if these connect wires were damaged please replace these wires.</item>
+        <item>Check Motor Wires connected the Driver.</item>
+        <item>Check Speed-Sensor is installed correctly, if the Speed-Sensor is damaged, replace it.</item>
+        <item>This error will disappear calibration.</item>
+        <item>If Belt is too tight,or the Belt need add.</item>
+        <item>Driver is damaged or not, if damaged replace. If odor of Motor is strange,replace the Motor.</item>
+        <item>Put the Safety-Key onto the right area</item>
+        <item>Please connect Console wires tightly</item>
+        <item>Please contact with the Vendor.</item>
+        <item>Please check and confirm the connect of Console and Driver.</item>
+        <item>Please contact with the Vendor.</item>
+        <item>Please contact with the Vendor.</item>
+        <item>Please contact with the Vendor.</item>
+        <item>Please contact with the Vendor.</item>
+        <item>Please contact with the Vendor.</item>
+        <item>Please contact with the Vendor.</item>
+        <item></item>
+    </string-array>
+    <string name="error_names0">The dispaly and controller communication, the display receives error</string>
+    <string name="error_names1">The motor wire is broken or fallen off</string>
+    <string name="error_names2">Defective light senor</string>
+    <string name="error_names3">Incline error</string>
+    <string name="error_names4">The motor is blocked and the motor controller is with over-current protection</string>
+    <string name="error_names5">Defective motor or IGBT</string>
+    <string name="error_names6">Safety lock sheds</string>
+    <string name="error_names7">Low-voltage protection</string>
+    <string name="error_names8">Over-voltage protection</string>
+    <string name="error_names9">Treadmill and controller communication, and the controller receives error.</string>
+    <string name="error_names10">TFT and treadmill communication error</string>
+    <string name="error_names11">Hall sensor error</string>
+    <string name="error_names12">Controller inner communication error</string>
+    <string name="error_names13">Overheating</string>
+    <string name="error_names14">Self-check error of innner voltage</string>
+    <string name="error_names15">Seriously over current</string>
+    <string name="error_msgs0">Please check every joint from console display to communication wire of motor controller to ensure that every core is well plugged in. If the wire between display and controller is broken, pls replace it.</string>
+    <string name="error_msgs1">Please check the motor wire is fixed with connector on controller</string>
+    <string name="error_msgs2">Please check whether the speed sensor is installed well or broken, if broken, replace it.</string>
+    <string name="error_msgs3">After learning,it can be clear up by itself.</string>
+    <string name="error_msgs4">Please check whether the running belt is tighten or the belt needs oiling.</string>
+    <string name="error_msgs5">Please check whether the controller in broken and replace controller. Check whether there is peculiar smell and replace motor.</string>
+    <string name="error_msgs6">Please put the safety lock into the sensor area</string>
+    <string name="error_msgs7">Please check whether the connecting wire inner console diaplay is loosen and please connect it.</string>
+    <string name="error_msgs8">Please contact dealer</string>
+    <string name="error_msgs9">Please contact dealer</string>
+    <string name="error_msgs10">Please contact dealer</string>
+    <string name="error_msgs11">Please contact dealer</string>
+    <string name="error_msgs12">Please contact dealer</string>
+    <string name="error_msgs13">Please contact dealer</string>
+    <string name="error_msgs14">Please contact dealer</string>
+    <string name="error_msgs15">Please contact dealer</string>
+    <string name="error_msg0">E01</string>
+    <string name="error_msg1">E02</string>
+    <string name="error_msg2">E03</string>
+    <string name="error_msg3">E04</string>
+    <string name="error_msg4">E05</string>
+    <string name="error_msg5">E06</string>
+    <string name="error_msg6">E07</string>
+    <string name="error_msg7">E08</string>
+    <string name="error_msg8">E09</string>
+    <string name="error_msg9">E10</string>
+    <string name="error_msg10">E11</string>
+    <string name="error_msg11">E12</string>
+    <string name="error_msg12">E13</string>
+    <string name="error_msg13">E14</string>
+    <string name="error_msg14">E15</string>
+    <string name="error_msg15">E16</string>
+    <string name="conten_note">1.This system ensured that treadmill can run stability and fluency.\n\n2.The treadmill should be kept in a dry, ventilated place, with water, oil and other liquids contaminated.\n\n3.As for touch screen:Avoid near magnets and speakers with magnets, and avoid sharp objects sliding on the surface of the touch screen, avoiding water, oil, and any other liquid or solid that conducts electricity\n\n4.If the system is not running smoothly, there may be an irregular apk application installed, and the apk should be managed and cleaned on a regular basis.</string>
+    <string name="conten_guide">5.Power on the whole machine and wait for system to start, about 30 seconds.\n\n6.When the system enters the main interface, it can enter the smart running interface by touching "smart running"\n\n7.There are six modes for user selection: manual mode, inverse mode,scene Mode, program mode, custom mode and HRC mode.After each exercise, the sports record can be shared, which should be pre-installed with the corresponding apk application.</string>
+    <string name="lii">\n4.each movement is completed, the movement record can be shared, this should be preloaded with the corresponding apk applications. </string>
+    <string name="login_kong">Account or password is empty</string>
+    <string name="no_kong">Can not be empty</string>
+    <string name="mima">Two passwords are different</string>
+    <string name="no_wifi">No connection network</string>
+    <string name="login_error">Login error</string>
+    <string name="kdj">Registration failed</string>
+    <string name="fail">Registration failed,The account exists</string>
+    <string name="pre_info">Perfect information</string>
+    <string name="nickname">Nickname </string>
+    <string name="error">Fail</string>
+    <string name="qing">Please log in</string>
+    <string name="next_update">Next Update</string>
+    <string name="affaim_updata">Confirm the update</string>
+    <string name="version_update">Version updates</string>
+    <string name="system_update">System update</string>
+    <string name="recovy">After the upgrade is completed,will be automatically restarted </string>
+    <string name="app_update">app update</string>
+    <string name="person_info">Personal Info</string>
+    <string name="sport_history">Sport Record</string>
+    <string name="add">Add</string>
+    <string name="hello">Tourist</string>
+    <string name="remember">Remember the password</string>
+    <string name="mode_name">Model Name</string>
+    <string name="ci">Time</string>
+    <string name="dates">Date</string>
+    <string name="load">Loading ...</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="not_exceed">No exceeding</string>
+    <string name="history_mileage">Distance</string>
+    <string name="history_heat">Calorie</string>
+    <string name="history_heart">HRC</string>
+    <string name="history_time">Time</string>
+    <string name="history_date">Date </string>
+    <string name="history_pack">Pace </string>
+    <string name="his_mil_dan">(Km)</string>
+    <string name="his_heat_dan">(KCal)</string>
+    <string name="his_hrc_dan">(BPM)</string>
+    <string name="his_time_dan">(H/M/S)</string>
+    <string name="his_date_dan">(yy/m/d)</string>
+    <string name="exit">Exit</string>
+    <string name="inverse_state">倒数模式说明</string>
+    <string name="aerobies_state">减脂模式说明</string>
+    <string name="climb_state">爬山运动说明</string>
+    <string name="preinstall_state">专业运动说明</string>
+    <string name="heart_state">心率模式说明</string>
+    <string name="insanity_state">有氧运动说明</string>
+    <string name="health_state">保健运动说明</string>
+    <string name="warm_state">热身运动说明</string>
+    <string name="manual_state">手动模式说明</string>
+    <string name="speed_show">— Speed</string>
+    <string name="sloped_show">— Incline</string>
+    <string name="play_error">Play error</string>
+    <string name="stop_error">Stop making mistakes</string>
+    <string name="isnull">VideoView is null</string>
+</resources>

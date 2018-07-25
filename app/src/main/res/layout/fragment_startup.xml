@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/startup_bj">
+
+    <ImageView
+        android:layout_width="@dimen/my600dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/base_map" />
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="@dimen/my120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/my100dp"
+        android:layout_marginTop="@dimen/my80dp"
+        android:src="@mipmap/logo" />
+
+    <Button
+        android:id="@+id/startup_btn_login"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="@dimen/my60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/logo_iv"
+        android:layout_marginRight="@dimen/my100dp"
+        android:layout_marginTop="@dimen/my30dp"
+        android:background="@drawable/selector_startup_login"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <Button
+        android:id="@+id/startup_btn_register"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="@dimen/my60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/startup_btn_login"
+        android:layout_marginRight="@dimen/my100dp"
+        android:layout_marginTop="@dimen/my60dp"
+        android:background="@drawable/selector_startup_register"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <Button
+        android:id="@+id/startup_btn_visitant"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="@dimen/my60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/startup_btn_register"
+        android:layout_marginRight="@dimen/my100dp"
+        android:layout_marginTop="@dimen/my60dp"
+        android:background="@drawable/selector_startup_visitant"
+        android:text="@string/visitant"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+</RelativeLayout>

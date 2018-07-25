@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/my530dp"
+    android:layout_marginTop="@dimen/my40dp">
+
+    <TextView
+        android:id="@+id/info_tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my60dp"
+        android:layout_marginTop="@dimen/my10dp"
+        android:text="@string/age"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <EditText
+        android:id="@+id/info_et_age"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my15dp"
+        android:layout_toRightOf="@id/info_tv_age"
+        android:background="@mipmap/frame"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/info_et_age"
+        android:layout_alignRight="@id/info_et_age"
+        android:layout_marginBottom="@dimen/my10dp"
+        android:layout_marginRight="@dimen/my10dp"
+        android:text="@string/sui"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:id="@+id/info_tv_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_et_age"
+        android:layout_marginLeft="@dimen/my60dp"
+        android:layout_marginTop="@dimen/my35dp"
+        android:text="@string/heart_rate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <EditText
+        android:id="@+id/info_et_heart"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_et_age"
+        android:layout_marginLeft="@dimen/my15dp"
+        android:layout_marginTop="@dimen/my25dp"
+        android:layout_toRightOf="@id/info_tv_heart"
+        android:background="@mipmap/frame"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/info_et_heart"
+        android:layout_alignRight="@id/info_et_heart"
+        android:layout_marginBottom="@dimen/my10dp"
+        android:layout_marginRight="@dimen/my10dp"
+        android:text="@string/bpm"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/info_tv_heart"
+        android:layout_below="@id/info_et_heart"
+        android:layout_marginTop="@dimen/my30dp"
+        android:text="@string/chronic_illness"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my30dp" />
+
+    <LinearLayout
+        android:id="@+id/info_tv_without"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/info_et_heart"
+        android:layout_below="@id/info_et_heart"
+        android:layout_marginLeft="@dimen/my10dp"
+        android:layout_marginTop="@dimen/my20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/info_iv_without"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my10dp"
+            android:src="@drawable/selector_complete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/without"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_tv_cardiopathy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/info_tv_without"
+        android:layout_marginLeft="@dimen/my80dp"
+        android:layout_toRightOf="@id/info_tv_without"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/info_iv_cardiopathy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my10dp"
+            android:src="@drawable/selector_complete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cardiopathy"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_tv_arthritis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/info_tv_without"
+        android:layout_below="@id/info_tv_without"
+        android:layout_marginTop="@dimen/my20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/info_iv_arthritis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my10dp"
+            android:src="@drawable/selector_complete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arthritis"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_tv_hypertension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/info_tv_cardiopathy"
+        android:layout_below="@id/info_tv_cardiopathy"
+        android:layout_marginTop="@dimen/my20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/info_iv_hypertension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my10dp"
+            android:src="@drawable/selector_complete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hypertension"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_tv_hyperlipidemia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/info_tv_without"
+        android:layout_below="@id/info_tv_arthritis"
+        android:layout_marginTop="@dimen/my20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/info_iv_hyperlipidemia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my10dp"
+            android:src="@drawable/selector_complete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hyperlipidemia"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_tv_hyperglycemia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/info_tv_cardiopathy"
+        android:layout_below="@id/info_tv_hypertension"
+        android:layout_marginTop="@dimen/my20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/info_iv_hyperglycemia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my10dp"
+            android:src="@drawable/selector_complete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hyperglycemia"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/my30dp" />
+    </LinearLayout>
+</RelativeLayout>

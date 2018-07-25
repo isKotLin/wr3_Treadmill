@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/add_ll_custom"
+        android:layout_width="@dimen/my800dp"
+        android:layout_height="@dimen/my400dp"
+        android:layout_marginTop="@dimen/my30dp"
+        android:background="@mipmap/add_custom_bj">
+
+        <RadioGroup
+            android:id="@+id/selector_rg_ascend"
+            android:layout_width="@dimen/my800dp"
+            android:layout_height="@dimen/my50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/selector_rb_sped"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/speed"
+                android:textColor="@color/heart_text"
+                android:textSize="@dimen/my30dp" />
+
+            <RadioButton
+                android:id="@+id/selector_rb_slop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/sloped"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my30dp" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/custom_view_speed"
+            android:layout_width="@dimen/my400dp"
+            android:layout_height="@dimen/my1dp"
+            android:layout_below="@id/selector_rg_ascend"
+            android:background="@color/heart_text" />
+
+        <View
+            android:id="@+id/custom_view_sloped"
+            android:layout_width="@dimen/my400dp"
+            android:layout_height="@dimen/my1dp"
+            android:layout_below="@id/selector_rg_ascend"
+            android:layout_toRightOf="@id/custom_view_speed"
+            android:background="@color/heart_text"
+            android:visibility="invisible" />
+
+        <com.vigorchip.treadmill.view.AddCustomView
+            android:id="@+id/custom_acv_data"
+            android:layout_width="@dimen/my800dp"
+            android:layout_height="@dimen/my330dp"
+            android:layout_below="@id/custom_view_sloped" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/custom_et_name"
+        android:layout_width="@dimen/my700dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_alignLeft="@id/add_ll_custom"
+        android:layout_below="@id/add_ll_custom"
+        android:layout_marginTop="@dimen/my10dp"
+        android:background="@mipmap/name_frame"
+        android:hint="@string/mode_name"
+        android:paddingBottom="@dimen/my10dp"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/my40dp"
+        android:paddingTop="@dimen/my10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="@dimen/my24dp" />
+
+    <Button
+        android:id="@+id/add_btn_custom"
+        android:layout_width="@dimen/my85dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_alignRight="@id/add_ll_custom"
+        android:layout_below="@id/add_ll_custom"
+        android:layout_marginTop="@dimen/my10dp"
+        android:background="@color/heart_text"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my24dp" />
+</RelativeLayout>
